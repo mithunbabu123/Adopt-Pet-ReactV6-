@@ -1,0 +1,31 @@
+Notes on React V6
+---------------------
+src folder - to store source file
+in index.html <div>root<div> the react start there
+
+
+JSX --> hidden createElement and other fumctions
+in react data flows downward  parent--> child. child don't know whos rendering and doesn't interact with it parent ever
+npm - node package manager
+npm is installed per project 
+npm init -y (for setting npm in the current project)
+package.json mainly manifest for the project (all the files and dependencies needed for project to work)
+
+tools
+-----
+1.prettier -- automatic code formatter (every time we save it re-adjust space comas and all that kind of stuff for us) npm install -D prettier (-D dev dependency)
+package-lock.json is created by installing prettier and makes all the team members to use prettier even they don't install it in vs code
+package.json helps to excute script (Script is basically like a repository of shell commands that work inside of your project)
+2.eslint -- eslint and prettier both take care of spacing but eslint deals more with syntax like , '' "" etc
+eslint and prettier can work together (npm install -D eslint@7.18.0 eslint-config-prettier@8.1.0) -- to prevent bugs and unwanted codes
+Parcel - bundler for js (npm install -D parcel@1.12.3)
+parcel automatically sent NODE_ENV=development and all other stuff for us 
+when pushing make to production so we can reduce the size by 1/4
+babel- tool for automatically understand where react should be imported without importing it makes it easy for coding
+
+
+---------------
+JSX-easy coding,Hooks-state was implimented (never put hooks in for loop or if statement it may disorder execution)
+hooks - we mainly use useState then useEffect
+Error bounderies works with class component only not with function component
+Modal and Context also been implemented to make website more attractive and to understand the concept
